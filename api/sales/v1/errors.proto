@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sales.v1;
+
+import "errors/errors.proto";
+
+option go_package = "gitlab.calendaria.team/services/sales/api/sales/v1;sales_v1";
+
+enum ErrorReason {
+  option (errors.default_code) = 500;
+
+  INTERNAL = 0;
+  NOT_FOUND = 1 [(errors.code) = 404];
+  INVALID_REQUEST = 2 [(errors.code) = 400];
+  FORBIDDEN = 3 [(errors.code) = 403];
+  ALREADY_EXISTS = 4 [(errors.code) = 409];
+}

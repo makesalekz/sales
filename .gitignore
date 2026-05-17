@@ -1,0 +1,8 @@
+bin/
+.env
+*.exe
+tmp/
+.DS_Store
+node_modules/
+.next/
+dist/

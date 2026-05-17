@@ -1,0 +1,147 @@
+syntax = "proto3";
+
+package sales.v1;
+
+option go_package = "gitlab.calendaria.team/services/sales/api/sales/v1;sales_v1";
+
+import "api/sales/v1/models.proto";
+
+service SalesService {
+  rpc CreateSale(CreateSaleRequest) returns (CreateSaleReply);
+}
+
+service ShiftService {
+  rpc OpenShift(OpenShiftRequest) returns (OpenShiftReply);
+  rpc CloseShift(CloseShiftRequest) returns (CloseShiftReply);
+  rpc GetShift(GetShiftRequest) returns (GetShiftReply);
+  rpc ListShifts(ListShiftsRequest) returns (ListShiftsReply);
+}
+
+service ReturnsService {
+  rpc CreateReturn(CreateReturnRequest) returns (CreateReturnReply);
+}
+
+service CashierLogService {
+  rpc GetCashierLog(GetCashierLogRequest) returns (GetCashierLogReply);
+}
+
+service SyncService {
+  rpc SyncOperations(SyncOperationsRequest) returns (SyncOperationsReply);
+}
+
+message CreateSaleItemRequest {
+  int64 product_id = 1;
+  string product_name = 2;
+  string quantity = 3;
+  string unit_price = 4;
+  string discount = 5;
+}
+
+message CreateSaleRequest {
+  repeated CreateSaleItemRequest items = 1;
+  string payment_type = 2;
+  int64 shift_id = 3;
+  string discount_type = 4;
+  string discount_value = 5;
+}
+
+message CreateSaleReply {
+  Sale sale = 1;
+}
+
+// --- Shift messages ---
+
+message OpenShiftRequest {
+  string opening_amount = 1;
+  optional int64 store_id = 2;
+}
+
+message OpenShiftReply {
+  Shift shift = 1;
+}
+
+message CloseShiftRequest {
+  int64 shift_id = 1;
+}
+
+message CloseShiftReply {
+  Shift shift = 1;
+  ZReport z_report = 2;
+}
+
+message GetShiftRequest {
+  int64 shift_id = 1;
+}
+
+message GetShiftReply {
+  Shift shift = 1;
+}
+
+message ListShiftsRequest {
+  int32 limit = 1;
+  int64 from_id = 2;
+  optional int64 store_id = 3;
+}
+
+message ListShiftsReply {
+  repeated Shift shifts = 1;
+}
+
+// --- Return messages ---
+
+message CreateReturnItemRequest {
+  int64 sale_item_id = 1;
+  string quantity = 2;
+}
+
+message CreateReturnRequest {
+  int64 sale_id = 1;
+  repeated CreateReturnItemRequest items = 2;
+}
+
+message CreateReturnReply {
+  Return sale_return = 1;
+}
+
+// --- Sync messages ---
+
+enum SyncOperationType {
+  SALE = 0;
+  RETURN = 1;
+}
+
+message SyncOperation {
+  string uuid = 1;
+  SyncOperationType type = 2;
+  bytes data = 3;
+  string created_at = 4;
+}
+
+message SyncOperationResult {
+  string uuid = 1;
+  string status = 2; // "synced", "already_synced", "error"
+  string error_message = 3;
+}
+
+message SyncOperationsRequest {
+  repeated SyncOperation operations = 1;
+}
+
+message SyncOperationsReply {
+  repeated SyncOperationResult results = 1;
+}
+
+// --- CashierLog messages ---
+
+message GetCashierLogRequest {
+  int64 cashier_id = 1;
+  int64 shift_id = 2;
+  string date_from = 3;
+  string date_to = 4;
+  int32 limit = 5;
+  int64 from_id = 6;
+}
+
+message GetCashierLogReply {
+  repeated CashierLogEntry entries = 1;
+}
