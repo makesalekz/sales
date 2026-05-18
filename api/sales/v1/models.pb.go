@@ -911,7 +911,7 @@ const file_api_sales_v1_models_proto_rawDesc = "" +
 	"\vdescription\x18\t \x01(\tR\vdescription\x12\x1d\n" +
 	"\n" +
 	"created_at\x18\n" +
-	" \x01(\tR\tcreatedAtB=Z;github.com/makesalekz/sales/api/sales/v1;sales_v1b\x06proto3"
+	" \x01(\tR\tcreatedAtB3Z1github.com/makesalekz/sales/api/sales/v1;sales_v1b\x06proto3"
 
 var (
 	file_api_sales_v1_models_proto_rawDescOnce sync.Once

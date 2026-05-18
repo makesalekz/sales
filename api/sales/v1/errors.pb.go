@@ -87,7 +87,7 @@ const file_api_sales_v1_errors_proto_rawDesc = "" +
 	"\tNOT_FOUND\x10\x01\x1a\x04\xa8E\x94\x03\x12\x19\n" +
 	"\x0fINVALID_REQUEST\x10\x02\x1a\x04\xa8E\x90\x03\x12\x13\n" +
 	"\tFORBIDDEN\x10\x03\x1a\x04\xa8E\x93\x03\x12\x18\n" +
-	"\x0eALREADY_EXISTS\x10\x04\x1a\x04\xa8E\x99\x03\x1a\x04\xa0E\xf4\x03B=Z;github.com/makesalekz/sales/api/sales/v1;sales_v1b\x06proto3"
+	"\x0eALREADY_EXISTS\x10\x04\x1a\x04\xa8E\x99\x03\x1a\x04\xa0E\xf4\x03B3Z1github.com/makesalekz/sales/api/sales/v1;sales_v1b\x06proto3"
 
 var (
 	file_api_sales_v1_errors_proto_rawDescOnce sync.Once

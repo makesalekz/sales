@@ -201,7 +201,7 @@ const file_conf_conf_proto_rawDesc = "" +
 	"\x04GRPC\x12\x18\n" +
 	"\anetwork\x18\x01 \x01(\tR\anetwork\x12\x12\n" +
 	"\x04addr\x18\x02 \x01(\tR\x04addr\x123\n" +
-	"\atimeout\x18\x03 \x01(\v2\x19.google.protobuf.DurationR\atimeoutB:Z8github.com/makesalekz/sales/internal/conf;confb\x06proto3"
+	"\atimeout\x18\x03 \x01(\v2\x19.google.protobuf.DurationR\atimeoutB0Z.github.com/makesalekz/sales/internal/conf;confb\x06proto3"
 
 var (
 	file_conf_conf_proto_rawDescOnce sync.Once
