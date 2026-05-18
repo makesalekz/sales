@@ -1,36 +1,12 @@
 services:
-  db:
-    image: postgres:15
-    container_name: sales_db
+  sales:
+    build: .
+    container_name: sales
+    restart: unless-stopped
     environment:
-      POSTGRES_USER: me
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: sales
-    ports:
-      - '5440:5432'
-    volumes:
-      - sales_data:/var/lib/postgresql/data
-
-  nats:
-    image: nats:2.10
-    container_name: sales_nats
-    ports:
-      - '4222:4222'
-
-  service:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    container_name: sales_service
-    ports:
-      - '8006:8000'
-      - '9006:9000'
-    depends_on:
-      - db
-      - nats
-    environment:
-      - AUTOMIGRATE=true
-    command: ["./app", "-conf", "config.yaml"]
-
-volumes:
-  sales_data:
+      - SERVICE_NAME=sales
+      - CONSUL_ADDRESS=${CONSUL_ADDRESS}
+      - VAULT_ADDRESS=${VAULT_ADDRESS}
+      - VAULT_DEV_ROOT_TOKEN_ID=${VAULT_DEV_ROOT_TOKEN_ID}
+      - DEBUG=${DEBUG}
+      - AUTOMIGRATE=${AUTOMIGRATE}
