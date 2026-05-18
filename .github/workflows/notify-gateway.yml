@@ -1,0 +1,22 @@
+name: Notify Gateway on Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "api/**"
+      - "ent/schema/**"
+      - "internal/service/**"
+      - "internal/biz/**"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger gateway docs sync
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: makesalekz/gateway
+          event-type: backend-updated
+          client-payload: '{"service": "${{ github.event.repository.name }}"}'
