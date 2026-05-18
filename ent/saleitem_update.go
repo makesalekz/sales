@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/saleitem"
 )
 
 // SaleItemUpdate is the builder for updating SaleItem entities.

@@ -9,18 +9,18 @@ import (
 	"log"
 	"reflect"
 
-	"gitlab.calendaria.team/services/sales/ent/migrate"
+	"github.com/makesalekz/sales/ent/migrate"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"gitlab.calendaria.team/services/sales/ent/cashierlog"
-	"gitlab.calendaria.team/services/sales/ent/sale"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
-	"gitlab.calendaria.team/services/sales/ent/salereturn"
-	"gitlab.calendaria.team/services/sales/ent/salereturnitem"
-	"gitlab.calendaria.team/services/sales/ent/shift"
+	"github.com/makesalekz/sales/ent/cashierlog"
+	"github.com/makesalekz/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/salereturn"
+	"github.com/makesalekz/sales/ent/salereturnitem"
+	"github.com/makesalekz/sales/ent/shift"
 )
 
 // Client is the client that holds all ent builders.

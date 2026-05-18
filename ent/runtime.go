@@ -5,13 +5,13 @@ package ent
 import (
 	"time"
 
-	"gitlab.calendaria.team/services/sales/ent/cashierlog"
-	"gitlab.calendaria.team/services/sales/ent/sale"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
-	"gitlab.calendaria.team/services/sales/ent/salereturn"
-	"gitlab.calendaria.team/services/sales/ent/salereturnitem"
-	"gitlab.calendaria.team/services/sales/ent/schema"
-	"gitlab.calendaria.team/services/sales/ent/shift"
+	"github.com/makesalekz/sales/ent/cashierlog"
+	"github.com/makesalekz/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/salereturn"
+	"github.com/makesalekz/sales/ent/salereturnitem"
+	"github.com/makesalekz/sales/ent/schema"
+	"github.com/makesalekz/sales/ent/shift"
 )
 
 // The init function reads all schema descriptors with runtime code

@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
-	"gitlab.calendaria.team/services/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/sale"
 )
 
 // SaleDelete is the builder for deleting a Sale entity.

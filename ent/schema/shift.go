@@ -3,8 +3,8 @@ package schema
 import (
 	"time"
 
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/ent/mixins"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/mixins"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect"

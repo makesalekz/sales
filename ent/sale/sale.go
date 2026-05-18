@@ -8,7 +8,7 @@ import (
 
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"gitlab.calendaria.team/services/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/enum"
 )
 
 const (

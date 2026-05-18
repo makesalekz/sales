@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	v1 "gitlab.calendaria.team/services/sales/api/sales/v1"
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/internal/biz"
-	"gitlab.calendaria.team/services/sales/internal/data"
+	v1 "github.com/makesalekz/sales/api/sales/v1"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/internal/biz"
+	"github.com/makesalekz/sales/internal/data"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/shopspring/decimal"

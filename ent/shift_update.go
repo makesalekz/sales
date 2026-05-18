@@ -12,9 +12,9 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
-	"gitlab.calendaria.team/services/sales/ent/shift"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/shift"
 )
 
 // ShiftUpdate is the builder for updating Shift entities.

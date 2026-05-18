@@ -7,14 +7,14 @@ import (
 	"fmt"
 
 	"entgo.io/ent/dialect/sql"
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/ent/cashierlog"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
-	"gitlab.calendaria.team/services/sales/ent/sale"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
-	"gitlab.calendaria.team/services/sales/ent/salereturn"
-	"gitlab.calendaria.team/services/sales/ent/salereturnitem"
-	"gitlab.calendaria.team/services/sales/ent/shift"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/ent/cashierlog"
+	"github.com/makesalekz/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/salereturn"
+	"github.com/makesalekz/sales/ent/salereturnitem"
+	"github.com/makesalekz/sales/ent/shift"
 )
 
 // The Query interface represents an operation that queries a graph.

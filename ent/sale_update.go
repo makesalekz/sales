@@ -12,11 +12,11 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
-	"gitlab.calendaria.team/services/sales/ent/sale"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
-	"gitlab.calendaria.team/services/sales/ent/salereturn"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/salereturn"
 )
 
 // SaleUpdate is the builder for updating Sale entities.

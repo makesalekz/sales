@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/salereturn"
-	"gitlab.calendaria.team/services/sales/ent/salereturnitem"
+	"github.com/makesalekz/sales/ent/salereturn"
+	"github.com/makesalekz/sales/ent/salereturnitem"
 )
 
 // SaleReturnItemCreate is the builder for creating a SaleReturnItem entity.

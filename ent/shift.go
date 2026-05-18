@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/ent/shift"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/shift"
 )
 
 // Shift is the model entity for the Shift schema.

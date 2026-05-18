@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"gitlab.calendaria.team/services/sales/ent/cashierlog"
-	"gitlab.calendaria.team/services/sales/ent/predicate"
+	"github.com/makesalekz/sales/ent/cashierlog"
+	"github.com/makesalekz/sales/ent/predicate"
 )
 
 // CashierLogDelete is the builder for deleting a CashierLog entity.

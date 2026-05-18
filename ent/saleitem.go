@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/shopspring/decimal"
-	"gitlab.calendaria.team/services/sales/ent/sale"
-	"gitlab.calendaria.team/services/sales/ent/saleitem"
+	"github.com/makesalekz/sales/ent/sale"
+	"github.com/makesalekz/sales/ent/saleitem"
 )
 
 // SaleItem is the model entity for the SaleItem schema.

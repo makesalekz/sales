@@ -3,9 +3,9 @@ package data
 import (
 	"context"
 
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/ent/sale"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/ent/sale"
 )
 
 type SalesRepo interface {

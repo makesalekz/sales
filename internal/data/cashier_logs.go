@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/ent/cashierlog"
-	"gitlab.calendaria.team/services/sales/ent/enum"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/ent/cashierlog"
+	"github.com/makesalekz/sales/ent/enum"
 
 	"github.com/shopspring/decimal"
 )

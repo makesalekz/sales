@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	v1 "gitlab.calendaria.team/services/sales/api/sales/v1"
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/internal/biz"
-	"gitlab.calendaria.team/services/utils/v2/auth"
+	v1 "github.com/makesalekz/sales/api/sales/v1"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/internal/biz"
+	"github.com/makesalekz/utils/v2/auth"
 )
 
 type ReturnsServiceImpl struct {

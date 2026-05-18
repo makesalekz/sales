@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package sales.v1;
 
-option go_package = "gitlab.calendaria.team/services/sales/api/sales/v1;sales_v1";
+option go_package = "github.com/makesalekz/sales/api/sales/v1;sales_v1";
 
 message Sale {
   int64 id = 1;

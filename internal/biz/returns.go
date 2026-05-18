@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"gitlab.calendaria.team/services/sales/ent"
-	"gitlab.calendaria.team/services/sales/ent/enum"
-	"gitlab.calendaria.team/services/sales/internal/data"
+	"github.com/makesalekz/sales/ent"
+	"github.com/makesalekz/sales/ent/enum"
+	"github.com/makesalekz/sales/internal/data"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/shopspring/decimal"

@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.calendaria.team/services/sales/ent"
+	"github.com/makesalekz/sales/ent"
 )
 
 // The CashierLogFunc type is an adapter to allow the use of ordinary

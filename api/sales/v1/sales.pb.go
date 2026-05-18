@@ -1237,7 +1237,7 @@ const file_api_sales_v1_sales_proto_rawDesc = "" +
 	"\x11CashierLogService\x12M\n" +
 	"\rGetCashierLog\x12\x1e.sales.v1.GetCashierLogRequest\x1a\x1c.sales.v1.GetCashierLogReply2_\n" +
 	"\vSyncService\x12P\n" +
-	"\x0eSyncOperations\x12\x1f.sales.v1.SyncOperationsRequest\x1a\x1d.sales.v1.SyncOperationsReplyB=Z;gitlab.calendaria.team/services/sales/api/sales/v1;sales_v1b\x06proto3"
+	"\x0eSyncOperations\x12\x1f.sales.v1.SyncOperationsRequest\x1a\x1d.sales.v1.SyncOperationsReplyB=Z;github.com/makesalekz/sales/api/sales/v1;sales_v1b\x06proto3"
 
 var (
 	file_api_sales_v1_sales_proto_rawDescOnce sync.Once
