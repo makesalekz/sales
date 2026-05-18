@@ -2,5 +2,5 @@ server:
   grpc:
     addr: 0.0.0.0:9000
     timeout: 30s
-db: host=localhost port=5440 user=me dbname=sales password=password sslmode=disable
-nats: nats://localhost:4222
+db: host=postgres_db port=5432 user=umag dbname=sales password=umag_secret_2026 sslmode=disable
+nats: nats://nats:4222
